@@ -44,7 +44,7 @@ In addition to this low-level device access, classes defined in the fido2.client
 implement higher level device operations.
 
 %prep
-%setup -q -n %{name}-%{version}/fido2
+%setup -q -n %{name}-%{version}/python-fido2
 
 %build
 %py3_build
