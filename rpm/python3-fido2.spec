@@ -27,6 +27,7 @@ License:        Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND MPL-2.0
 Group:          Development/Languages/Python
 URL:            https://github.com/Yubico/python-fido2
 Source0:        %{name}-%{version}.tar.gz
+
 BuildRequires:  python3-cryptography
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
@@ -43,7 +44,7 @@ In addition to this low-level device access, classes defined in the fido2.client
 implement higher level device operations.
 
 %prep
-%setup -q -n %{modname}-%{version}
+%setup -q -n %{name}-%{version}/fido2
 
 %build
 %py3_build
